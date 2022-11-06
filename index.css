@@ -2,5 +2,28 @@
     --main-bg-color: #131B23;
     --text-color: #fff;
     --accents: #51087E;
-    
+    --lm-main-bg-color: #fff;
+    --lm-text-color: #131B23;
+
   }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+  
+  /* 
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
+  
+  */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+ 

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.section-call .logoTXT h1{
+    font-size: 2em;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: -2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (min-width: 999px) {
+    .section-call .logoTXT h1{
+        font-size: 2em;
+        text-align: center;
+        padding: 2rem;
+        margin-bottom: -6rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.call-text {
+    width: 60%;
+    float: right;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+.call-text h3 {
+    font-size: 0.78em;
+    margin-bottom: 0.5rem;
+}
+
+.call-text h1 {
+    font-size: 2em;
+    margin-bottom: 0.7rem;
+}
+
+.call-text p {
+    font-size: 1em;
+    margin-bottom: 1.4rem;
+}
+
+
+.calendly-inline-widget {
+    overflow: hidden!important; 
+
+}
+
+
+@media screen and (max-width: 999px) {
+
+/* mobile first */
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.call-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+}
