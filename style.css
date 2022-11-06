@@ -1,0 +1,108 @@
+
+  .container {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 88vh;
+  }
+
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+  }
+
+  .text-wrapper h1 {
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+  }
+
+  .text-wrapper h4 {
+    font-size: 1.8em;
+    margin-bottom: 2rem;
+  }
+
+  .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+
+/*
+  .right-side .image-wrapper {
+    margin-right: 20rem;
+  }
+*/
+
+  .right-side .right-overlay-text {
+    position: absolute;
+    background-color: transparent;
+  }
+
+  .right-side .right-overlay-text h1 {
+    font-size: 6em;
+    color: var(--accents);
+    background-color: transparent!important;
+    /*margin-left: 19rem;*/
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+      }
+
+      .text-wrapper{
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 4rem;;
+      }
+
+      .text-wrapper h1 {
+        font-size: 1.5em;
+        margin-bottom: 1rem;
+      }
+    
+      .text-wrapper h4 {
+        font-size: 1.2em;
+        margin-bottom: 2rem;
+        font-weight: 400;
+      }
+
+      .right-side {
+        width: 90%;
+      }
+
+      #chartIMG {
+        width: 99%;
+      }
+    
+      .right-side .right-overlay-text h1 {
+        font-size: 3em;
+        color: var(--accents);
+        background-color: transparent!important;
+        /*margin-left: 19rem;*/
+      }
+
+  }
+
+ 
+
+  .container .intro-text-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .second-cont {
+    background-color: green;
+    
+  }
