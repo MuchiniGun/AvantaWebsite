@@ -166,6 +166,10 @@ section {
   color: #018cf1;
 }
 
+.mobile-slider-info {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     display: flex;
@@ -233,6 +237,10 @@ section {
     border-radius: 15px;
     border-style: solid;
     box-shadow: 0 0 0.5rem 0.25rem rgb(0 0 0 / 25%);
+  }
+
+  .mobile-slider-info {
+    display: contents;
   }
 }
 
