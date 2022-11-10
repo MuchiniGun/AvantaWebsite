@@ -1,12 +1,10 @@
 :root {
-  --main-bg-color:  #00AFF0;
+  --main-bg-color:  #ffffff;
   --lm-main-bg-color: #131B23;
-  --text-color: df;
-  --accents: #27272B;
-  --lm-accents: #51087E;
-  --lm-text-color: #131B23;
-
+  --text-color: rgb(0, 0, 0);
+  --accents:  #00AFF0;
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
@@ -27,26 +25,31 @@ font-family: 'Archivo Black', sans-serif;
   list-style: none;
   text-decoration: none;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: var(--main-bg-color);
   color: var(--text-color);
 }
 
+body {
+  background-color: var(--main-bg-color);
+}
+
 nav {
+  position: sticky;
+  top: 0;
   width: 100%;
-  height: 9vh;
+  height: 6.5vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
   background-color: var(--main-bg-color);
   color: var(--text-color);
+  border-bottom: solid 1px transparent;
 }
 
-nav .logoTXT {
-  margin-left: 2rem;
+nav .LogoIMG {
   font-size: 2.5em;
-  font-family: 'Courier New', Courier, monospace;
+  margin-top: 1rem;
+  margin-left: 2rem;
 }
 
 nav .nav-right {
@@ -89,7 +92,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
+    width: 45%;
   }
 
   .text-wrapper h1 {
@@ -100,7 +103,7 @@ section {
   .text-wrapper h6 {
     font-size: 1.8em;
     margin-bottom: 2rem;
-    font-weight: 500;
+    font-weight: 300;
   }
 
   .right-side {
@@ -110,11 +113,19 @@ section {
     width: 50%;
   }
 
-/*
+
   .right-side .image-wrapper {
-    margin-right: 20rem;
+      width: fit-content;
+      height: fit-content;
+      border-radius: 15px;
+      border-style: solid;
+      box-shadow: 0 0 0.5rem 0.25rem rgb(0 0 0 / 25%);
   }
-*/
+
+  .image-wrapper img{
+      border-radius: 15px;
+  }
+
 
   .right-side .right-overlay-text {
     position: absolute;
@@ -128,6 +139,13 @@ section {
     /*margin-left: 19rem;*/
   }
 
+  .txt_only {
+      color: #00AFF0;
+  }
+  .txt_fans {
+      color: #018CF1;
+  }
+
   @media screen and (max-width: 768px) {
     .container {
         display: flex;
@@ -139,12 +157,11 @@ section {
       .text-wrapper{
         width: 100%;
         text-align: center;
-        margin-top: 2rem;
         margin-bottom: 4rem;;
       }
 
       .text-wrapper h1 {
-        font-size: 1.5em;
+        font-size: 3em;
         margin-bottom: 1rem;
       }
     
@@ -163,10 +180,7 @@ section {
       }
     
       .right-side .right-overlay-text h1 {
-        font-size: 3em;
-        color: var(--accents);
-        background-color: transparent!important;
-        /*margin-left: 19rem;*/
+        display: none;
       }
 
   }
@@ -191,7 +205,7 @@ section {
 
   #landing-cta-btn:hover {
     letter-spacing: 1px;
-    background-color: #3d0460;
+    background-color: #018CF1;
   }
 
   .section-two {
@@ -225,7 +239,7 @@ section {
   .section-two .top-half p {
     font-size: 1.4em;
     margin-bottom: 2rem;
-    font-weight: 100;
+    font-weight: 300;
   }
 
   .section-two .bottom-half {
@@ -248,6 +262,7 @@ section {
     display: flex;
     flex-direction: column;
     width: 50%;
+    align-items: flex-start;
   }
 
   .bottom-half .right-side i{
@@ -256,7 +271,9 @@ section {
 
   .bottom-half .right-side h4{
     background-color: transparent;
-    margin-bottom: 4rem
+    margin-bottom: 4rem;
+    width: 80%;
+    text-align: center;
   }
 
   /*mobile devices*/
@@ -280,7 +297,7 @@ section {
     .section-two .top-half p {
       font-size: 1em;
       margin-bottom: 1rem;
-      font-weight: 200;
+      font-weight: 300;
     }
 
     .section-two .bottom-half {
@@ -300,11 +317,14 @@ section {
     .bottom-half .right-side {
       width: 100%;
       text-align: center;
+      margin-top: 1rem;
     }
   
     .bottom-half .right-side h4{
       background-color: transparent;
-      margin-bottom: 0.7rem
+      margin-bottom: 0.7rem;
+      align-items: center;
+      width: 100%;
       
     }
 
@@ -366,20 +386,17 @@ section {
     }
   
     .section-three h1 {
-      display: flex;
-      background-color: transparent;
-      font-size: 3em;
-      margin-bottom: 0.5em;
-      width: 70%;
-      margin-left: auto;
-      margin-right: auto;
+      font-size: 2.4em;
+      margin-bottom: 1rem;
+      width: 100%;
+      justify-content: center;
+      margin-top: 1rem
     }
   
     .section-three h4 {
       display: flex;
       width: 100%;
-      margin-left: auto;
-      margin-right: auto;
+      margin-bottom: 1rem;
     }
   }
 
@@ -393,4 +410,10 @@ section {
   .section-four h1 {
     font-size: 3em;
     margin-bottom: 1.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+      .section-four h1 {
+          font-size: 2em;
+        }
   }
