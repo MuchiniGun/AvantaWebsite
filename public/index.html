@@ -232,6 +232,13 @@
         color: #018cf1;
       }
 
+      .desktop-slider-info {
+        float: right;
+        margin-right: 2rem;
+        margin-top: -5rem;
+        opacity: 20%;
+      }
+
       .mobile-slider-info {
         display: none;
       }
@@ -303,6 +310,10 @@
           border-radius: 15px;
           border-style: solid;
           box-shadow: 0 0 0 0;
+        }
+
+        .desktop-slider-info {
+          display: none;
         }
 
         .mobile-slider-info {
@@ -599,7 +610,7 @@
             <div class="slider-item">
               <div class="image-wrapper">
                 <img
-                  src="ofresults_one.jpg"
+                  src="ofresults_two.jpg"
                   alt=""
                   width="300"
                   height="600"
@@ -610,7 +621,7 @@
             <div class="slider-item">
               <div class="image-wrapper">
                 <img
-                  src="ofresults_one.jpg"
+                  src="ofresults_three.jpg"
                   alt=""
                   width="300"
                   height="600"
@@ -621,7 +632,7 @@
             <div class="slider-item">
               <div class="image-wrapper">
                 <img
-                  src="ofresults_one.jpg"
+                  src="ofresults_two.jpg"
                   alt=""
                   width="300"
                   height="600"
@@ -644,6 +655,7 @@
         </div>
         <h6 class="mobile-slider-info">swipe left for more</h6>
       </div>
+      <h6 class="desktop-slider-info">swipe left for more</h6>
     </section>
 
     <section id="services">
@@ -712,6 +724,22 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div
+        class="footer-container"
+        style="
+          display: flex;
+          justify-content: center;
+          height: 10vh;
+          flex-direction: column;
+          align-items: center;
+        "
+      >
+        <h4>email:admin@avantamgmt.com</h4>
+        <h4>instagram:@avantaofmanagement</h4>
+        <h4>twitter:@AvantaOFMngmt</h4>
+      </div>
+    </footer>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const loadEl = document.querySelector("#load");
